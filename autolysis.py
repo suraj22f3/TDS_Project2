@@ -90,7 +90,7 @@ def generate_dynamic_visualizations(df, output_dir, agg_threshold=10):
     datetime_columns = df.select_dtypes(include=['datetime64']).columns
 
     # Combines histograms into one PNG
-    combine_histograms(df, numeric_columns, os.path.join(output_dir, 'combined_histograms.png'))
+    #combine_histograms(df, numeric_columns, os.path.join(output_dir, 'combined_histograms.png'))
 
     # Correlation matrix heatmap
     if len(numeric_columns) > 1:
